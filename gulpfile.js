@@ -24,7 +24,7 @@ var jsfiles = ['./src/js/script.js'];
 var base64Opts = {
     extensions: ['png', /\.jpg#datauri$/i]
 };
-var outputPath = '.';
+var outputPath = '../yflaw.github.io';
 
 gulp.task('images', function () {
     return gulp.src('./src/images/*')
