@@ -1,0 +1,22 @@
+<div class="header">
+    <a href="index.html"><div class="logo"><span class="notxt">YF Law</span></div></a>
+    <h1>
+        <a href="index.html"><div class="title"><%= header.title %></div></a>
+        <div class="specialties"><%= header.subtext %></div>
+    </h1>
+    <div class="banner"></div>
+</div>
+<div class="menu">
+    <nav>
+        <ul>
+            <% for (var i = 0; i < menu.length; i += 1) { %>
+            <li>
+                <a href="<%= menu[i].url %>"><%= menu[i].name %></a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+</div>
+<div id="fpHero" class="hero">
+    <img src="./images/mountain.jpg" />
+</div>

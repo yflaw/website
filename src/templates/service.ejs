@@ -1,0 +1,36 @@
+<!DOCTYLE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title><%= title.service %></title>
+        <% include ./partials/head.ejs %>
+    </head>
+    <body class="service">
+        <div class="wrap">
+            <% include ./partials/header.ejs %>
+            <div class="body">
+                <div class="content">
+                    <h2>服務項目與收費</h2>
+                    <p>本事務所提供的服務項目及收費方式如下：</p>
+                    <table class="serviceTable">
+                        <tr>
+                            <th class="title">服務項目</th>
+                            <th class="price">價格</th>
+                            <th class="note">說明</th>
+                        </tr>
+                        <% for (var i = 0; i < service.length; i += 1) { %>
+                        <tr>
+                            <td><%= service[i].title %></td>
+                            <td><%= service[i].price %></td>
+                            <td><%= service[i].note %></td>
+                        </tr>
+                        <% } %>
+                    </table>
+                </div>
+                <% include ./partials/sidebar.ejs %>
+            </div>
+        </div>
+        <% include ./partials/footer.ejs %>
+    </body>
+    <script src="./script.js" inline></script>
+</html>

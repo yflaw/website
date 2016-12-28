@@ -1,0 +1,43 @@
+<!DOCTYLE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title><%= title.contact %></title>
+        <% include ./partials/head.ejs %>
+    </head>
+    <body class="contact">
+        <div class="wrap">
+            <% include ./partials/header.ejs %>
+            <div class="body">
+                <div class="content">
+                    <p>您可以透過以下方式聯絡我：</p>
+                    <ul class="contactInfo">
+                        <li>電話：<a href="tel:0908-859465">0908-859465</a></li>
+                        <li>電子信箱：<a href="mailto:master@yflaw.tw">master@yflaw.tw</a></li>
+                    </ul>
+                    <p>或者直接填妥這個表單並傳送：</p>
+                    <form action="https://formspree.io/yf@yflaw.tw" class="contactForm" method="POST">
+                        <ul>
+                            <li>
+                                <label>您的稱呼方式</label>
+                                <input type="text" name="name" />
+                            </li>
+                            <li>
+                                <label>您的電子信箱</label>
+                                <input type="email" name="_replyto" />
+                            </li>
+                            <li>
+                                <label>您的問題</label>
+                                <textarea name="message"></textarea>
+                            </li>
+                        </ul>
+                        <button type="submit">送出</button>
+                    </form>
+                </div>
+                <% include ./partials/sidebar.ejs %>
+            </div>
+        </div>
+        <% include ./partials/footer.ejs %>
+    </body>
+    <script src="./script.js" inline></script>
+</html>

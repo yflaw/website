@@ -1,0 +1,33 @@
+<div class="sidebar">
+    <aside>
+        <div class="sec specialties">
+            <section>
+                <div class="hd">
+                    <h2><%= sidebar.specialties.title %></h2>
+                </div>
+                <div class="bd">
+                    <ul>
+                    <% for (var i = 0; i < sidebar.specialties.items.length; i += 1) { %>
+                        <li><%= sidebar.specialties.items[i] %></li>
+                    <% } %>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="sec resume">
+            <section>
+                <div class="hd">
+                    <h2><%= sidebar.resume.title %></h2>
+                </div>
+                <div class="bd">
+                    <ul>
+                    <% for (var i = 0; i < sidebar.resume.items.length; i += 1) { %>
+                        <li><%= sidebar.resume.items[i] %></li>
+                    <% } %>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYOFULAW%2F&tabs=timeline&width=297px&height=600px&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=248003741893222" width="297px" height="600px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </aside>
+</div>
