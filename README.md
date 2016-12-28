@@ -41,7 +41,8 @@ You may run this command to validate your Javascript file:
 Update Domain
 =================
 Refer to this doc:
-http://spector.io/how-to-set-up-github-pages-with-a-custom-domain-on-gandi/
+• http://spector.io/how-to-set-up-github-pages-with-a-custom-domain-on-gandi/
+
 
 Reference
 =================
