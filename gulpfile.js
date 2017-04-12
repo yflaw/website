@@ -25,6 +25,7 @@ var base64Opts = {
     extensions: ['png', /\.jpg#datauri$/i]
 };
 var outputPath = '../yflaw.github.io';
+var filesToCopy = ['./src/robots.txt', './src/sitemap.xml'];
 
 gulp.task('images', function () {
     return gulp.src('./src/images/*')
@@ -56,6 +57,10 @@ gulp.task('css', ['less'], function () {
     .pipe(gulp.dest(outputPath));
 });
 
+gulp.task('copy', function () {
+    return gulp.src(filesToCopy)
+        .pipe(gulp.dest(outputPath));
+})
 // Concat and compress JS files in src/data/javascript, and generate build/production.js
 gulp.task('js', function () {
     var jsfilesToBuild;
@@ -104,7 +109,7 @@ gulp.task('template', ['jsonlint'], function (done) {
         .on('end', done);
     });
 });
-gulp.task('build', ['template', 'css', 'js'], function () {
+gulp.task('build', ['template', 'css', 'js', 'copy'], function () {
     var optsHtml = {
       conditionals: true,
       spare: true
