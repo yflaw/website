@@ -10,12 +10,8 @@ install:
   - mkdir -p dist
   - npm install
 
-before_script:
-  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/yflaw/website.git"
-  - git config --global user.email "azai.tw@gmail.com"
-  - git config --global user.name "Travis-CI"
-
 script:
+  - gulp lint
   - gulp build
 
 deploy:
