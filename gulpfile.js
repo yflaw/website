@@ -24,7 +24,7 @@ var jsfiles = ['./src/js/script.js'];
 var base64Opts = {
     extensions: ['png', /\.jpg#datauri$/i]
 };
-var outputPath = '../yflaw.github.io';
+var outputPath = './dist';
 var filesToCopy = ['./src/robots.txt', './src/sitemap.xml'];
 
 gulp.task('images', function () {
