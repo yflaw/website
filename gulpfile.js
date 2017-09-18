@@ -25,7 +25,7 @@ var base64Opts = {
     extensions: ['png', /\.jpg#datauri$/i]
 };
 var outputPath = './dist';
-var filesToCopy = ['./src/robots.txt', './src/sitemap.xml'];
+var filesToCopy = ['./src/robots.txt', './src/sitemap.xml', './src/CNAME'];
 
 gulp.task('images', function () {
     return gulp.src('./src/images/*')

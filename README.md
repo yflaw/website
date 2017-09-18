@@ -1,4 +1,4 @@
-# yflaw [![Build Status](http://azai.synology.me:33333/buildStatus/icon?job=YFLaw)](http://azai.synology.me:33333/job/YFLaw/)
+# yflaw [![Build Status](https://travis-ci.org/yflaw/website.svg?branch=master)](https://travis-ci.org/yflaw/website)
 
 
 This is YFLaw web frontend builder. The purpose is to automate repetitive tasks and make code update more agile.
